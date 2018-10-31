@@ -23,9 +23,19 @@ Please input your choice >> ''')
             print("Invalid Input. Please try again.")
 
 
+def setup():
+    shanghai = School("Shanghai")
+    beijing = School("Beijing")
 
+    python = Course("Python", 12, 480)
+    go = Course("Go", 18, 600)
+    linux = Course("Linux", 14, 580)
 
+    shanghai.addCourse(go)
+    beijing.addCourse(linux)
+    beijing.addCourse(python)
 
+setup()
 
 
 run()
